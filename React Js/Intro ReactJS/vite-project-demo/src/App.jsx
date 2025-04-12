@@ -12,8 +12,9 @@ import Logout from './Component/Conditional Rendering/logout.jsx';
 import Login from './Component/Conditional Rendering/login.jsx';
 import EventHandle from './Component/eventHandle.jsx';
 import ColorChanger from './Component/colorChanger.jsx';
-import Hooks from './Component/hooks.jsx';
+import Timer from './Component/timer.jsx';
 import { useEffect } from 'react'
+
 
 function App() {
   let [count, setcount] = useState(0);
@@ -141,7 +142,13 @@ function App() {
           <br />
           <h3>Numbr of clicks on the page : {clickedOutside}</h3>
         </div>
-
+        <br /><br /><br />
+        <div className="timer">
+          <h1>Timer</h1>
+          <h2>Day:Hour:Minute:Second</h2>
+          <h3>Timer is running</h3>
+          <Timer />
+        </div>
 
       </>
     );
