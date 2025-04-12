@@ -1,5 +1,5 @@
 import './App.css'
-import { useState } from 'react'
+import { use, useState } from 'react'
 import UserCard from './Component/userCard'
 import img1 from './assets/img1.png'
 import img2 from './assets/react.svg'
@@ -12,6 +12,8 @@ import Logout from './Component/Conditional Rendering/logout.jsx';
 import Login from './Component/Conditional Rendering/login.jsx';
 import EventHandle from './Component/eventHandle.jsx';
 import ColorChanger from './Component/colorChanger.jsx';
+import Hooks from './Component/hooks.jsx';
+import { useEffect } from 'react'
 
 function App() {
   let [count, setcount] = useState(0);
@@ -42,6 +44,57 @@ function App() {
     document.body.style.backgroundColor = color;
     document.body.style.transition = '1s';
   }
+
+  // ^useEffect Hook
+
+  // Variation 1
+
+  // ! This will run every time the component is rendered
+  /*
+  useEffect(()=>{
+    alert("Pikachu i choose you");
+  });
+  */
+
+  // Variation 2
+  // ! This will run only once when the component is mounted
+
+  /*
+  useEffect(()=>{
+    alert("Pikachu i choose you");
+  },[]);
+  */
+
+  // Variation 3
+
+  // ! This will run everytime whhen there is change in the count variable
+  /*
+  useEffect(() => {
+    alert("Pikachu i choose you");
+  },[count]);
+  */
+
+  // Variation 4
+
+  // ! This will run everytime when there is change in the count and name variable
+  /*
+  useEffect(()=>{
+    alert("Pikachu i choose you");
+  },[count,name])
+  */
+
+  // Variation 5
+
+  // ! This will run everytime when there is change in the count and the return is used here to tell teh user that the previous value is getting erased.
+
+  /*
+  useEffect(()=>{
+    alert("Count's value is gettig rendered");
+    return ()=>{
+      alert("Count's previous value is getting erased")
+    }
+  },[count]);
+  */
 
   // Conditional Rendering
   let [logIn, setLogIn] = useState(0);
@@ -93,6 +146,18 @@ function App() {
       </>
     );
   }
+
+
+
+
+
+
+
+
+
+
+
+  // Conditional Rendering
   else {
     setLogIn = true;
     return (
