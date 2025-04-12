@@ -1,0 +1,16 @@
+.container-click{
+    border: 2px dashed white;
+    width:50%;
+    margin: 1rem auto;
+    padding: 1.5rem;
+}
+
+.button{
+    background-color: rgb(185, 185, 185);
+    border: 2ps solid black;
+    color: black;
+    height: 2.5rem;
+    width:6rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+}

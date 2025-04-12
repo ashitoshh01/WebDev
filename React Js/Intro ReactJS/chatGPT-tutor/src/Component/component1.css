@@ -1,0 +1,29 @@
+.btn {
+    width: 6rem;
+    height: 2.5rem;
+    background-color: black;
+    color: white;
+    border: 1px solid grey;
+    transition: all 0.5s ease;
+}
+
+.btn:hover{
+    background-color: rgb(27, 26, 26);
+    border: 1px solid grey;
+    transition: all 0.5s ease;
+}
+
+.inc ,.dec{
+    width:6rem;
+    padding: 0;
+    gap:1.5rem;
+    height:2.5rem;
+    margin:1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.para{
+    width:80%;
+    margin: 2rem auto;
+}

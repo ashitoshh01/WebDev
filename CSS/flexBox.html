@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        *{
+            margin: 1px;
+            padding:0;
+        }
+
+        .flexConainer{
+            border:2px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            height:70vh;
+            /* flex-wrap:wrap-reverse; */
+            /* flex-wrap:nowrap; */
+            justify-content: center;
+            align-items: center;
+            /* align-content: center; */
+
+
+        }
+        .flexelem{
+            margin:10px;
+            border:2px dashed red;
+            height: 100px;
+            width: 100px;
+        }
+        #flex1{
+            background-color: rgba(225,225,20,0.5);
+            align-self: flex-start;
+        }
+        #flex2{
+            background-color: rgba(225,100,20,0.5);
+            align-self: flex-end;
+        }
+        #flex3{
+            background-color: rgba(220,225,100,0.5);
+            align-self: center;
+        }
+        #flex4{
+            background-color: rgba(0,0,20,0.5);
+        }
+        #flex5{
+            background-color: rgba(225,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="flexConainer">
+        <div class="flexelem" id="flex1">Div 1</div>
+        <div class="flexelem" id="flex2">Div 2</div>
+        <div class="flexelem" id="flex3">Div 3</div>
+        <div class="flexelem" id="flex4">Div 4</div>
+        <div class="flexelem" id="flex5">Div 5</div>
+    </div>
+</body>
+</html>

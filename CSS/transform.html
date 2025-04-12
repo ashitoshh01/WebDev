@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <link rel="shortcut icon" href="../HTML/allHtml/ashitosh.jpg" type="image/x-icon">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        p{
+            font-weight: 800;
+            font-size: larger;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: crimson;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            margin: 15px;
+            transition: all 0.5s ease-in-out;
+            /* margin: auto; */
+        }
+
+        #box1:hover{
+            /* transform: rotateX(45deg); */
+            /* transform: rotateY(45deg); */
+            /* transform: rotateZ(45deg); */
+            transform: rotate(5deg);
+        }
+        #box2:hover{
+            transform: scale(1.1);
+        }
+        #box3:hover{
+            transform: scale(2,1);
+        }
+        #box4:hover{
+            /* transform: translateX(20px); */
+            /* transform: translateY(20px); */
+            transform: translate(20px,-20px);
+        }
+        #box5:hover{
+            /* transform: skew(20deg); */
+            /* transform: skewX(30deg); */
+            transform: skewY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">
+            <p>Hello from Ashitosh..!</p>
+        </div>
+        <div class="box" id="box2">
+            <p>Hello from Ashitosh..!</p>
+        </div>
+        <div class="box" id="box3">
+            <p>Hello from Ashitosh..!</p>
+        </div>
+        <div class="box" id="box4">
+            <p>Hello from Ashitosh..!</p>
+        </div>
+        <div class="box" id="box5">
+            <p>Hello from Ashitosh..!</p>
+        </div>
+    </div>   
+</body>
+</html>

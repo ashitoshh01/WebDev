@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow</title>
+    <link rel="shortcut icon" href="../HTML/allHtml/ashitosh.jpg" type="image/x-icon">
+    <style>
+        :root{
+            --overratedColor:black;
+            --overratedWidth:400px;
+            --overratedHeight:300px;
+
+        }
+        body{
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .container{
+            display: flex;
+            height: var(--overratedHeight);
+            width: var(--overratedWidth);
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            padding: 2em;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 50px;
+            box-shadow: 10px 10px 20px var(--overratedColor);
+        }
+
+        .container1{
+            display: flex;
+            height: var(--overratedHeight);
+            width: var(--overratedWidth);
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            padding: 2em;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 50px;
+            box-shadow: 10px 10px 20px var(--overratedColor) , -10px -10px 30px purple;
+        }
+
+        
+        .container2{
+            display: flex;
+            height: var(--overratedHeight);
+            width: var(--overratedWidth);
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            padding: 2em;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 50px;
+            color:beige;
+            box-shadow: inset 10px 10px 100px var(--overratedColor) , inset -10px -10px 100px purple;
+        } 
+        
+        .container3{
+            display: flex;
+            height: var(--overratedHeight);
+            width: var(--overratedWidth);
+            justify-content: center;
+            align-items: center;
+            background-color: cadetblue;
+            padding: 2em;
+            box-sizing: border-box;
+            text-align: center;
+            margin: 50px;
+            box-shadow: 10px 10px 50px 30px var(--overratedColor);
+        }
+
+        #CEO{
+            text-shadow: 10px 10px 5px var(--overratedColor);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 id="CEO">Ashitosh</h1>
+            <img src="../HTML/allHtml/image.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
+        </div>
+    </div>
+    
+    <div class="container1">
+        <div class="box">
+            <h1 id="CEO1">Ashitosh</h1>
+            <img src="../HTML/allHtml/image.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box">
+            <h1 id="CEO2">Ashitosh</h1>
+            <img src="../HTML/allHtml/image.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="box">
+            <h1 id="CEO3">Ashitosh</h1>
+            <img src="../HTML/allHtml/image.png">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, molestiae.</p>
+        </div>
+    </div>
+</body>
+</html>

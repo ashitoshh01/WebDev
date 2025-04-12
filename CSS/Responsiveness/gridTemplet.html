@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Grid Templetes
+    </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .contaier{
+            display: grid;
+            gap:1rem;
+            background-color: chocolate;
+            padding: 4rem;
+            height: 100%;
+            width:100%;
+            grid-template-areas: 
+                "header header header"
+                "sidebar cont1 cont1"
+                "sidebar cont2 cont3"
+                "footer footer footer"
+            ;
+        }
+
+        .items{
+            background-color: blueviolet;
+            border: 2px solid black;
+            padding: 1rem;
+        }
+
+        #header{
+            grid-area: header;
+        }
+
+        #sidebar{
+            grid-area: sidebar;
+        }
+
+        #cont1{
+            grid-area: cont1;
+        }
+
+        #cont2{
+            grid-area: cont2;
+        }
+
+        #cont3{
+            grid-area: cont3;
+        }
+
+        #footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="contaier">
+        <div class="items" id="header">Header</div>
+        <div class="items" id="sidebar">Side Bar</div>
+        <div class="items" id="cont1">Cont 1</div>
+        <div class="items" id="cont2">Cont 2</div>
+        <div class="items" id="cont3">Cont 3</div>
+        <div class="items" id="footer">Footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Real Example</title>
+    <link rel="shortcut icon" href="../HTML/allHtml/ashitosh.jpg" type="image/x-icon">
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .flexBox{
+            display: flex;
+            background-color: chartreuse;
+            border: 5px solid green;
+            border-radius: 10px;
+            width:560px;
+        }
+        .text{
+            background-color: rgb(14, 14, 44);
+            color:white;
+            height:25px;
+            width: 190px;
+            border: 2px solid red;
+            margin: 5px;
+            border-radius: 10px;
+            text-align: center;
+        }img{
+            height:150px;
+            width:300px;
+            border: 2px solid aqua;
+            border-radius: 10px;
+        }
+        .container1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+        }
+        @media (max-width:560px){
+            .flexBox{
+                flex-direction: column;
+                justify-content: center;
+                align-items: end;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flexBox">
+        <div class="container1">
+            <div class="text" id="text1">This is Ashitosh..!</div>
+            <div class="text" id="text2">Richest Man in the Universe</div>
+        </div>
+        <div class="container1">
+            <div class="image">
+                <img src="../HTML/allHtml/image.png" alt="Ashitosh">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

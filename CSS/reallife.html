@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reallife Midea Use</title>
+    <style>
+        .container{
+            background-color: chartreuse;
+            border:2px solid black;
+            display: flex;
+        }
+
+        .flexItem{
+            background-color: aqua;
+            border: 2px solid black;
+            margin:10px;
+            height: 100px;
+            width: 100px;
+        }
+
+        @media (max-width:665px){
+            .container{
+                display: flex;
+                flex-direction: column;
+                width:140px;
+                transition-duration: 0.5s;
+                justify-content: center;
+            }
+        }
+
+        @media (min-width:666px){
+            .container{
+                background-color: maroon;
+                color:white;
+                transition-duration: 0.5s;
+
+            }
+            .flexItem{
+                background-color: red;
+                transition-duration: 0.5s;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="flexItem" id="item1">Hello 1</div>
+        <div class="flexItem" id="item2">Hello 2</div>
+        <div class="flexItem" id="item3">Hello 3</div>
+        <div class="flexItem" id="item4">Hello 4</div>
+        <div class="flexItem" id="item5">Hello 5</div>
+    </div>
+
+    <a href="reallife2.html">Website Example</a>
+</body>
+</html>
